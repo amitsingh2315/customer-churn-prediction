@@ -42,6 +42,8 @@ An intuitive **Flask web application** allows users to input customer details (g
 
 ### 1. Data Exploration & EDA
 **File:** `Churn_Analysis_EDA.ipynb`
+<img width="1277" height="660" alt="Screenshot 2025-10-19 014937" src="https://github.com/user-attachments/assets/6f6971c3-0b02-4316-b51d-c22872faf8ef" />
+
 
 - Performed exploratory data analysis to understand data distributions, correlations, and churn patterns.  
 - Visualized key churn indicators such as **contract type**, **tech support availability**, and **monthly charges**.
@@ -76,6 +78,20 @@ An intuitive **Flask web application** allows users to input customer details (g
 
 ##  Key Insights from EDA
 
+##  Exploratory Data Analysis (EDA)
+
+- **Senior Citizen:** Categorized as 0 (No) and 1 (Yes).  
+- **Tenure:** 75% of customers have tenure less than 55 months.  
+- **Monthly Charges:** Average ≈ **$64.76**, with 25% paying more than **$89**.  
+- **Churn Imbalance:** Around **73% customers stayed**, while **27% churned**.
+
+###  Key Insights
+- High churn in **month-to-month contracts**.  
+- Churn increases among **Fiber Optic Internet** users.  
+- Customers with **No Online Security** or **No Tech Support** are more likely to leave.  
+- **Long-term customers (5+ years)** have the lowest churn rate.
+
+
 ### 1️1 The Churn Rate is Imbalanced
 A large portion of customers remain loyal, making churn prediction an **imbalanced classification problem**.  
 <img width="996" height="659" alt="image" src="https://github.com/user-attachments/assets/0727fec6-db59-494d-a13a-807b4c4a9736" />
@@ -90,26 +106,26 @@ Customers with **Fiber Optic** internet have a higher churn rate — possibly du
 
 ---
 
-### 3️⃣ High Monthly Charges = High Churn
+### 3️ High Monthly Charges = High Churn
 Customers paying more ($70–$100) are more likely to churn.  
 <img width="1669" height="877" alt="Screenshot 2025-10-19 013334" src="https://github.com/user-attachments/assets/1ae15b30-92b9-4fea-8b05-46f151d6ce64" />
 
 
 ---
 
-### 4️⃣ Tech Support Retains Customers
+### 4️ Tech Support Retains Customers
 Lack of tech support strongly correlates with churn — service quality is key to retention.  
 <img width="1669" height="877" alt="Screenshot 2025-10-19 013334" src="https://github.com/user-attachments/assets/ed86fe60-f5c6-4a00-b308-3b57099a9a99" />
 
 
 ---
 
-### 5️⃣ Demographics Have Less Impact
+### 5️ Demographics Have Less Impact
 Gender, partner status, and dependents show little effect on churn.  
 
 ---
 
-## ⚙️ Model Summary
+##  Model Summary
 
 | Step | Description |
 |------|--------------|
@@ -123,6 +139,6 @@ Gender, partner status, and dependents show little effect on churn.
 
 ## Output:
 
-✅ Prediction: Will Not Churn
-🔢 Churn Probability: 14.23%
+ Prediction: Will Not Churn
+ Churn Probability: 14.23%
 
