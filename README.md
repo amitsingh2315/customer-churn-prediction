@@ -19,6 +19,8 @@ An intuitive **Flask web application** allows users to input customer details (g
 - A **confidence score** (churn probability)
 
 <img width="1631" height="1558" alt="Screenshot 2025-10-19 005934" src="https://github.com/user-attachments/assets/71169583-b773-457d-b98d-033b12d2ad82" />
+<img width="1581" height="647" alt="Screenshot 2025-10-19 022623" src="https://github.com/user-attachments/assets/92c2957a-6f52-41d5-9cbe-f9eaf8ba67fa" />
+
 
 
 ---
