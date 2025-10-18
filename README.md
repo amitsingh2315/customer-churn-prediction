@@ -11,12 +11,23 @@ A web application for predicting customer churn using a trained Random Forest mo
 
 ## Installation
 
+### Local Development
+
 1. **Install Python Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
 2. **Ensure Model File**: Make sure `model.sav` is in the project directory
+
+### Render Deployment
+
+1. **Connect to Render**: Link your GitHub repository to Render
+2. **Configure Service**: 
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `gunicorn app:app`
+   - Python Version: 3.10.12
+3. **Deploy**: Render will automatically deploy your app
 
 ## Usage
 

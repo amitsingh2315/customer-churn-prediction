@@ -9,6 +9,9 @@ warnings.filterwarnings('ignore')
 
 app = Flask(__name__)
 
+# Configure for production
+app.config['SECRET_KEY'] = 'your-secret-key-change-in-production'
+
 # Load the trained model
 try:
     with open('model.sav', 'rb') as file:
@@ -191,4 +194,9 @@ def preprocess_data(df):
     return processed_df.values
 
 if __name__ == '__main__':
+    # For local development
     app.run(debug=True, host='127.0.0.1', port=5000)
+else:
+    # For production deployment (Render)
+    # The app will be served by gunicorn
+    pass
